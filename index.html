@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10183f">
+  <title>Learnix | Your learning journey starts here</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="premium.css">
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="brand-panel" aria-label="Learnix introduction">
+      <div class="brand-top">
+        <a class="brand" href="#" aria-label="Learnix home">
+          <span class="logo-frame"><img src="learnix-logo.png" alt="Learnix logo"></span>
+          <span class="brand-copy"><strong>Learnix</strong><small>Learn smarter. Grow further.</small></span>
+        </a>
+        <span class="secure-pill"><span class="secure-dot"></span> Your learning space</span>
+      </div>
+
+      <div class="brand-message">
+        <div class="eyebrow"><span class="eyebrow-line"></span> BUILT AROUND YOU</div>
+        <h1>Your next chapter<br>starts <span>with you.</span></h1>
+        <p>A calmer, clearer way to manage your learning, build better habits, and make progress that lasts.</p>
+
+        <div class="preview-card">
+          <div class="preview-head">
+            <div class="preview-icon">✦</div>
+            <div><strong>Your learning journey</strong><small>A little progress adds up.</small></div>
+            <span class="live-tag">YOUR SPACE</span>
+          </div>
+          <div class="progress-label"><span>Weekly momentum</span><strong>Keep going</strong></div>
+          <div class="progress-track"><span></span></div>
+          <div class="preview-foot">
+            <span><i class="tiny-dot purple"></i> Study with intention</span>
+            <span><i class="tiny-dot cyan"></i> Grow at your pace</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-bottom">
+        <div class="bottom-mark">✧</div>
+        <p><strong>Progress, not pressure.</strong><br>Every student has a next step.</p>
+        <span class="copyright">© 2026 Learnix</span>
+      </div>
+      <div class="glow glow-one"></div><div class="glow glow-two"></div>
+    </section>
+
+    <section class="form-panel">
+      <div class="mobile-brand">
+        <img src="learnix-logo.png" alt="Learnix logo">
+        <div><strong>Learnix</strong><small>Learn smarter. Grow further.</small></div>
+      </div>
+
+      <div class="form-wrap">
+        <div class="form-intro">
+          <div class="welcome-icon" aria-hidden="true">✦</div>
+          <p class="form-kicker" id="form-kicker">WELCOME BACK</p>
+          <h2 id="form-title">Sign in to Learnix</h2>
+          <p class="form-subtitle" id="form-subtitle">Pick up where your learning journey left off.</p>
+        </div>
+
+        <div class="role-picker" aria-label="Choose your portal">
+          <button class="role-option active" type="button" data-role="student" aria-pressed="true">
+            <span class="role-symbol">♙</span><span><strong>Student</strong><small>Learning workspace</small></span><span class="role-check">✓</span>
+          </button>
+          <button class="role-option" type="button" data-role="teacher" aria-pressed="false">
+            <span class="role-symbol">▤</span><span><strong>Teacher</strong><small>Teaching workspace</small></span><span class="role-check">✓</span>
+          </button>
+        </div>
+
+        <div class="mode-switch" role="tablist" aria-label="Account access">
+          <button class="mode-btn active" id="signin-tab" role="tab" aria-selected="true" type="button">Sign in</button>
+          <button class="mode-btn" id="signup-tab" role="tab" aria-selected="false" type="button">Create account</button>
+        </div>
+
+        <div class="notice hidden" id="notice" role="status" aria-live="polite"></div>
+
+        <form id="signin-form" class="auth-form" novalidate>
+          <label for="signin-email" id="signin-email-label">Student email</label>
+          <div class="input-wrap">
+            <span class="field-icon" aria-hidden="true">✉</span>
+            <input id="signin-email" name="email" type="email" autocomplete="email" placeholder="you@college.edu" required>
+          </div>
+
+          <div class="label-row"><label for="signin-password">Password</label><button class="text-link" type="button" id="forgot-btn">Forgot password?</button></div>
+          <div class="input-wrap">
+            <span class="field-icon" aria-hidden="true">⌑</span>
+            <input id="signin-password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+            <button class="eye-btn" type="button" data-toggle="signin-password" aria-label="Show password">Show</button>
+          </div>
+
+          <div class="form-options">
+            <label class="check-label"><input type="checkbox" id="remember-me"><span class="custom-check"></span>Remember me</label>
+            <span class="private-note"><span>●</span> Private student space</span>
+          </div>
+          <button class="submit-btn" type="submit"><span>Sign in to Learnix</span><b aria-hidden="true">→</b></button>
+        </form>
+
+        <form id="signup-form" class="auth-form hidden" novalidate>
+          <div class="two-fields">
+            <div><label for="signup-name">Full name</label><div class="input-wrap"><span class="field-icon" aria-hidden="true">♙</span><input id="signup-name" name="name" type="text" autocomplete="name" placeholder="Your full name" required></div></div>
+            <div id="student-semester-field"><label for="signup-semester">Semester</label><div class="input-wrap select-wrap"><select id="signup-semester" name="semester"><option value="" disabled selected>Select semester</option><option>1st semester</option><option>2nd semester</option><option>3rd semester</option><option>4th semester</option><option>5th semester</option><option>6th semester</option><option>7th semester</option><option>8th semester</option></select></div></div>
+            <div id="teacher-department-field" class="hidden"><label for="signup-department">Department</label><div class="input-wrap"><span class="field-icon" aria-hidden="true">▤</span><input id="signup-department" name="department" type="text" placeholder="e.g. Computer Science"></div></div>
+          </div>
+          <label for="signup-email" id="signup-email-label">Student email</label>
+          <div class="input-wrap"><span class="field-icon" aria-hidden="true">✉</span><input id="signup-email" name="email" type="email" autocomplete="email" placeholder="you@college.edu" required></div>
+          <label for="signup-password">Create password</label>
+          <div class="input-wrap"><span class="field-icon" aria-hidden="true">⌑</span><input id="signup-password" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required><button class="eye-btn" type="button" data-toggle="signup-password" aria-label="Show password">Show</button></div>
+          <div class="strength-row"><div class="strength-track"><span id="strength-fill"></span></div><small id="strength-text">Password strength</small></div>
+          <label class="check-label terms"><input type="checkbox" id="agree-terms" required><span class="custom-check"></span><span>I agree to the <a href="#" id="terms-link">Terms</a> and understand account data is handled according to the current Learnix setup.</span></label>
+          <button class="submit-btn" type="submit"><span>Create my account</span><b aria-hidden="true">→</b></button>
+        </form>
+
+        <div class="divider"><span>MADE FOR YOUR LEARNING JOURNEY</span></div>
+        <p class="switch-prompt" id="switch-prompt">New to Learnix? <button type="button" class="text-link" id="switch-to-signup">Create an account</button></p>
+        <p class="fine-print">By continuing, you agree to use Learnix responsibly and keep your account details secure.</p>
+      </div>
+      <div class="form-footer"><span>✦ Small steps. Meaningful progress.</span><span>Help &amp; support</span></div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="backend-client.js"></script>
+  <script src="core.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

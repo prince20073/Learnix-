@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101637">
+<title>Learnix | Teacher Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="teacher-portal.css">
+<link rel="stylesheet" href="premium.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#" aria-label="Learnix Teacher Studio home">
+      <img src="learnix-logo.png" alt="Learnix logo">
+      <span><strong>Learnix</strong><small>Teacher Studio</small></span>
+    </a>
+    <div class="workspace-tag"><span class="live-dot"></span> TEACHING WORKSPACE</div>
+    <nav class="navigation" aria-label="Teacher navigation">
+      <button class="nav-item active" data-view="overview"><span class="nav-icon">▦</span>Overview</button>
+      <button class="nav-item" data-view="classes"><span class="nav-icon">▤</span>My classes <em>4</em></button>
+      <button class="nav-item" data-view="students"><span class="nav-icon">♙</span>Student directory</button>
+      <button class="nav-item" data-view="assignments"><span class="nav-icon">☑</span>Assignments <em class="warm">3</em></button>
+      <button class="nav-item" data-view="grading"><span class="nav-icon">✎</span>Grading & feedback <em>12</em></button>
+      <button class="nav-item" data-view="attendance"><span class="nav-icon">◷</span>Attendance</button>
+      <button class="nav-item" data-view="insights"><span class="nav-icon">⌁</span>Learning insights <span class="mini-new">AI</span></button>
+      <button class="nav-item" data-view="support"><span class="nav-icon">♡</span>Early support</button>
+      <div class="nav-divider"></div>
+      <button class="nav-item" data-view="schedule"><span class="nav-icon">▦</span>Teaching schedule</button>
+      <button class="nav-item" data-view="resources"><span class="nav-icon">▧</span>Class resources</button>
+      <button class="nav-item" data-view="profile"><span class="nav-icon">♙</span>My profile</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span>Settings</button>
+      <div class="teacher-mini"><div class="mini-avatar" id="side-avatar">T</div><div class="mini-person"><b id="side-name">Teacher account</b><small>Faculty workspace</small></div><button id="logout" title="Sign out" aria-label="Sign out">↗</button></div>
+    </div>
+  </aside>
+  <div class="sidebar-scrim" id="scrim"></div>
+  <main class="main-area">
+    <header class="topbar">
+      <button class="mobile-menu" id="mobile-menu" aria-label="Open navigation">☰</button>
+      <div class="breadcrumbs"><span>Workspace</span><b>›</b><strong id="crumb">Overview</strong></div>
+      <div class="topbar-actions">
+        <label class="searchbox"><span>⌕</span><input id="global-search" type="search" placeholder="Search students, classes..."><kbd>Ctrl K</kbd></label>
+        <button class="icon-button" id="notifications" aria-label="Notifications">♧<i></i></button>
+        <button class="profile-button" id="top-profile" aria-label="Open settings"><span id="top-avatar">T</span></button>
+      </div>
+    </header>
+    <section class="page-content">
+      <div class="welcome-strip overview-only"><span class="info-symbol">i</span><p><b>Welcome to your teaching workspace</b> — your daily view of classes, feedback, and student progress.</p><button id="dismiss-notice" aria-label="Dismiss notice">×</button></div>
+      <section class="page-heading overview-only">
+        <div><p class="eyebrow" id="today-label">YOUR CLASSROOM · TEACHING OVERVIEW</p><h1 id="greeting">Good afternoon, Teacher <span>✦</span></h1><p id="heading-subtitle">Spend less time chasing tasks and more time helping students grow.</p></div>
+        <div class="heading-actions"><button class="secondary-button" id="take-attendance">◷ <span>Take attendance</span></button><button class="primary-button" id="create-assignment">＋ <span>Create assignment</span></button></div>
+      </section>
+
+      <section class="hero-banner overview-only">
+        <div class="hero-copy"><div class="hero-label"><span>✦</span> THE TEACHER'S ADVANTAGE</div><h2>See the signal.<br>Support the student.</h2><p>Bring attendance, effort, and learning progress together to decide what each class needs next.</p><div class="hero-actions"><button class="hero-cta" data-open="insights">Explore learning insights <span>→</span></button><span class="hero-caption">Thoughtful teaching, backed by context.</span></div></div>
+        <div class="hero-visual" aria-hidden="true"><div class="visual-ring ring-one"></div><div class="visual-ring ring-two"></div><div class="visual-core">✦</div><span class="visual-dot dot-a"></span><span class="visual-dot dot-b"></span><span class="visual-dot dot-c"></span><div class="visual-caption"><small>CLASSROOM PULSE</small><b>Learning in motion</b></div></div>
+      </section>
+
+      <div class="section-heading overview-only"><div><h2>Today's teaching snapshot</h2><p>A quick read on your workload and class engagement</p></div><span class="demo-chip"><span></span> SAMPLE DATA</span></div>
+      <section class="metric-grid overview-only">
+        <article class="metric-card"><div class="metric-top"><span class="metric-icon icon-blue">▤</span><span class="metric-change positive">This semester</span></div><p>Active classes</p><div class="metric-value">4</div><div class="metric-foot"><span class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span>Across 3 course subjects</span></div></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-icon icon-green">♙</span><span class="metric-change positive">+6 this term</span></div><p>Students taught</p><div class="metric-value">128</div><div class="metric-foot"><span class="tiny-check">✓</span><span>Across your assigned classes</span></div></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-icon icon-purple">✎</span><span class="metric-change needs-review">Needs action</span></div><p>Submissions to grade</p><div class="metric-value" id="pending-count">12</div><div class="metric-foot"><span class="tiny-clock">◷</span><span>Prioritise feedback this week</span></div></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-icon icon-amber">◷</span><span class="metric-change neutral">Last 30 days</span></div><p>Average attendance</p><div class="metric-value">86<span class="percent">%</span></div><div class="metric-foot"><span class="trend-line">↗</span><span>Use the trend to guide check-ins</span></div></article>
+      </section>
+
+      <section class="dashboard-grid overview-only">
+        <article class="card deadlines-card">
+          <div class="card-heading"><div><h3>Priority work</h3><p>What needs your attention next</p></div><button class="text-button" data-open="assignments">View assignments →</button></div>
+          <div class="priority-list" id="priority-list">
+            <div class="priority-row"><div class="priority-symbol purple-bg">✎</div><div class="priority-copy"><b>Review Data Structures practice set</b><span>12 submissions waiting for feedback</span></div><span class="priority-tag urgent">Review</span></div>
+            <div class="priority-row"><div class="priority-symbol amber-bg">◷</div><div class="priority-copy"><b>Database mini project</b><span>Due 18 October · CSE 3A</span></div><span class="priority-tag upcoming">6 days</span></div>
+            <div class="priority-row"><div class="priority-symbol blue-bg">▤</div><div class="priority-copy"><b>Prepare Java OOP lab reflection</b><span>Due 21 October · CSE 3B</span></div><span class="priority-tag upcoming">9 days</span></div>
+          </div>
+          <button class="wide-quiet-button" data-open="grading">Open grading queue <span>→</span></button>
+        </article>
+        <article class="card pulse-card">
+          <div class="card-heading"><div><h3>Class engagement</h3><p>Illustrative cohort indicators</p></div><button class="dots-button" aria-label="More engagement options">···</button></div>
+          <div class="engagement-score"><div><strong>86<span>%</span></strong><small>Attendance average</small></div><div class="score-ring"><div><b>86</b><small>/100</small></div></div></div>
+          <div class="progress-row"><div><span>Assignment completion</span><b>78%</b></div><div class="progress-track"><i style="width:78%"></i></div></div>
+          <div class="progress-row"><div><span>Feedback returned</span><b>64%</b></div><div class="progress-track purple-track"><i style="width:64%"></i></div></div>
+          <div class="pulse-note"><span>✦</span><p><b>Teaching tip</b> Return one clear next step with each mark to help students act on feedback.</p></div>
+        </article>
+      </section>
+
+      <section class="card class-overview-card overview-only">
+        <div class="card-heading"><div><h3>Your classes</h3><p>Jump into a class to manage its learning activity</p></div><button class="text-button" data-open="classes">All classes →</button></div>
+        <div class="class-grid">
+          <button class="class-card" data-class="Data Structures · CSE 3A"><div class="class-card-top"><span class="class-icon class-blue">DS</span><span class="class-menu">↗</span></div><small>COMPUTER SCIENCE · SEM 3</small><b>Data Structures</b><div class="class-meta"><span>42 students</span><span>● Active</span></div><div class="class-progress"><i style="width:74%"></i></div><div class="class-foot"><span>Course progress</span><b>74%</b></div></button>
+          <button class="class-card" data-class="Database Systems · CSE 3A"><div class="class-card-top"><span class="class-icon class-violet">DB</span><span class="class-menu">↗</span></div><small>COMPUTER SCIENCE · SEM 3</small><b>Database Systems</b><div class="class-meta"><span>38 students</span><span>● Active</span></div><div class="class-progress"><i style="width:68%"></i></div><div class="class-foot"><span>Course progress</span><b>68%</b></div></button>
+          <button class="class-card" data-class="Java OOP Lab · CSE 3B"><div class="class-card-top"><span class="class-icon class-green">JV</span><span class="class-menu">↗</span></div><small>PROGRAMMING LAB · SEM 3</small><b>Java OOP Lab</b><div class="class-meta"><span>26 students</span><span>● Active</span></div><div class="class-progress"><i style="width:81%"></i></div><div class="class-foot"><span>Course progress</span><b>81%</b></div></button>
+        </div>
+      </section>
+
+      <section class="dashboard-grid bottom-grid overview-only">
+        <article class="card support-card">
+          <div class="card-heading"><div><h3>Early support signals</h3><p>Prompts for a human check-in, never a label</p></div><button class="text-button" data-open="support">Review →</button></div>
+          <div class="support-item"><span class="support-indicator amber-indicator">!</span><div><b>Attendance follow-up</b><p>Review students who may need help attending regularly.</p></div><button data-open="support" aria-label="Review attendance follow-up">→</button></div>
+          <div class="support-item"><span class="support-indicator purple-indicator">↘</span><div><b>Performance change</b><p>Look for context before deciding on the next intervention.</p></div><button data-open="support" aria-label="Review performance change">→</button></div>
+          <div class="support-item"><span class="support-indicator green-indicator">✦</span><div><b>Progress to celebrate</b><p>Recognise improvement and steady effort, not only top scores.</p></div><button data-open="support" aria-label="Review student progress">→</button></div>
+        </article>
+        <article class="card schedule-card">
+          <div class="card-heading"><div><h3>Teaching schedule</h3><p>Today's planned sessions · demo timetable</p></div><button class="text-button" data-open="schedule">Full schedule →</button></div>
+          <div class="schedule-item"><div class="schedule-time"><b>09:00</b><small>AM</small></div><div class="schedule-line blue-line"></div><div class="schedule-info"><b>Data Structures</b><span>Room B-204 · CSE 3A</span></div><span class="schedule-state done">Completed</span></div>
+          <div class="schedule-item"><div class="schedule-time"><b>11:30</b><small>AM</small></div><div class="schedule-line purple-line"></div><div class="schedule-info"><b>Database Systems</b><span>Room A-108 · CSE 3A</span></div><span class="schedule-state next">Next</span></div>
+          <div class="schedule-item"><div class="schedule-time"><b>02:00</b><small>PM</small></div><div class="schedule-line green-line"></div><div class="schedule-info"><b>Java OOP Lab</b><span>Lab 2 · CSE 3B</span></div><span class="schedule-state later">Later</span></div>
+        </article>
+      </section>
+
+      <section class="card workspace-panel section-page" id="workspace-panel">
+        <div class="card-heading"><div><h3 id="workspace-title">Teaching tools</h3><p id="workspace-subtitle">Choose a workspace section to manage your classroom.</p></div><span class="section-badge">TEACHER TOOLS</span></div>
+        <div id="workspace-content" class="tool-grid">
+          <div class="tool-tile"><span>✎</span><b>Useful feedback</b><p>Make feedback specific, kind, and actionable.</p></div>
+          <div class="tool-tile"><span>⌁</span><b>Look for patterns</b><p>Combine signals before deciding what support is needed.</p></div>
+          <div class="tool-tile"><span>✦</span><b>Celebrate growth</b><p>Recognise improvement as well as achievement.</p></div>
+        </div>
+      </section>
+      <footer class="page-footer"><span>Learnix Teacher Studio</span><span>Prototype · Sample data only · <b>Student information should be handled responsibly</b></span></footer>
+    </section>
+  </main>
+</div>
+
+<div class="modal-backdrop" id="modal-backdrop" hidden>
+  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-head"><div><p class="eyebrow">LEARNIX TEACHER STUDIO</p><h2 id="modal-title">Create assignment</h2></div><button class="modal-close" id="modal-close" aria-label="Close dialog">×</button></div>
+    <form id="assignment-form">
+      <label>Assignment title<input id="assignment-title" required maxlength="90" placeholder="e.g. Linked list practice"></label>
+      <div class="form-two"><label>Class<select id="assignment-class"><option>Data Structures · CSE 3A</option><option>Database Systems · CSE 3A</option><option>Java OOP Lab · CSE 3B</option></select></label><label>Due date<input id="assignment-due" type="date" required></label></div>
+      <label>Instructions <textarea id="assignment-instructions" rows="3" placeholder="What should students submit?"></textarea></label>
+      <div class="modal-actions"><button type="button" class="secondary-button" id="cancel-modal">Cancel</button><button type="submit" class="primary-button">Save assignment</button></div>
+      <p class="form-hint">Demo mode: this assignment is saved in this browser only.</p>
+    </form>
+  </section>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="backend-client.js"></script>
+<script src="core.js"></script>
+<script src="teacher-portal.js"></script>
+</body></html>
